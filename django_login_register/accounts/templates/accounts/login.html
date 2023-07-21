@@ -16,15 +16,15 @@
 </div>
 <div id='register' class="container">
     
-    <form class="form-group" method="POST" action="{% url 'register' %}">
+    <form class="form-group" method="POST" action="{% url 'login' %}">
 
         {% csrf_token %}
         {{form.as_p}}
 
-        <input type="submit" value="Register">
+        <input type="submit" value="Sign in">
     </form>
 
-    <h2>Already Signed up <a href="{% url 'login' %}">Sign In</a></h2>
+    <h2>Not Already Signed up <a href="{% url 'register' %}">Sign Up</a></h2>
     
 </div>
 {% endblock %}
