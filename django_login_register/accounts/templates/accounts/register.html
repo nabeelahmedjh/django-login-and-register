@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+<div id='register' class="container">
+    <form class="form-group" method="POST" action="{% url 'register' %}">
+
+        {% csrf_token %}
+        {{form.as_p}}
+
+        <input type="submit" value="Register">
+    </form>
+    
+</div>
+{% endblock %}
