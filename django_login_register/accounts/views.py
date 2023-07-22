@@ -17,12 +17,12 @@ def registerUser(request):
         if form.is_valid():
             form.save()
             messages.success(request, 'Account created successfully')
-            return redirect('accounts-login')
+            return redirect('login')
 
 
     context = {'form': form}
 
-    return render(request, 'register.html', context)
+    return render(request, 'accounts/register.html', context)
 
 def loginUser(request):
 
@@ -44,7 +44,7 @@ def loginUser(request):
     context = {
         'form': form
     }
-    return render(request, 'login.html', context=context)
+    return render(request, 'accounts/login.html', context=context)
 
 
 

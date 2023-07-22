@@ -1,10 +1,10 @@
-{% extends 'base.html' %}
+{% extends 'accounts/home.html' %}
 
 {% load static %}
 
 {% block content %}
 
-<div id='register' class="container user-form mt-5">
+<div class="container user-form mt-5">
     <div class="row">
         <form class="form-group" method="POST" action="{% url 'login' %}">
 
