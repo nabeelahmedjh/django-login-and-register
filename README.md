@@ -51,7 +51,7 @@ pipenv shell
 #### Install dependencies
 
 ```bash
-pipenv install
+pipenv install django
 ```
 
 ### Apply migrations (Optional)
