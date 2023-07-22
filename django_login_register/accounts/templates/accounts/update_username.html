@@ -1,0 +1,45 @@
+{% extends 'accounts/home.html' %}
+
+{% load static %}
+
+{% block content %}
+<div  class="container user-form mt-5">
+
+    <div class="row mb-5">
+
+
+
+        <form class="form-group" method="POST" action="{% url 'update-username' %}">
+            {% csrf_token %}
+
+            {% include 'components/_messages.html' %}
+            <div class="form-group">
+              {{form.new_username.label}}
+              <br>
+              {{ form.new_username }}
+              
+            </div>
+            <div class="form-group">
+                {{form.confirm_new_username.label}}
+                <br>
+                {{ form.confirm_new_username }}
+            </div>
+            <div class="form-group mb-2">
+              {{form.password.label}}
+              <br>
+              {{ form.password }}
+            </div>
+            <small id="emailHelp" class="form-text text-light">We'll never share your information with anyone else.</small>
+            <br>
+            <button type="submit" class="btn btn-primary">Update Username</button>
+          </form>
+    </div>
+    <p>Visit <a href="{% url 'accounts-home' %}">Home</a></p>
+</div>
+    
+
+
+    
+    
+</div>
+{% endblock %}

@@ -24,3 +24,63 @@ h1 {
 #register {
     text-align: center;
 } */
+
+
+.user-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 50%;
+    padding: 1rem;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: #461959;
+    color: white;
+}
+
+input {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid white;
+    
+    width: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #461959;
+    color: white;
+    padding: 1rem;
+    margin: 0 auto;
+    width: 50%;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.messages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 50%;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: #461959;
+    color: white;
+}
+
+li {
+    list-style-type: none;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid white;
+    width: auto;
+    background-color: #1D5B79;
+}
